@@ -1,4 +1,4 @@
-#2
+--2
 CREATE DATABASE game_maker;
 CREATE TABLE rpgmaker(
 	id bigserial,
@@ -16,7 +16,7 @@ VALUES ('RPG Maker 95','1997-03-28'),
 	   ('RPG Maker MZ','2020-08-20'),
 	   ('RPG Maker Unite','2023-04-06');
 
-#Ch.2本體所帶出Ch.3作業之前置步驟
+--Ch.2本體所帶出Ch.3作業之前置步驟
 CREATE TABLE teachers(
 	id bigserial,
 	first_name varchar(25),
@@ -34,15 +34,15 @@ VALUES ('Janet','Smith','F.D. Roosevelt HS','2011-10-30',36200),
 	   ('Betty','Diaz','Myers Middle School','2005-08-30',43500),
 	   ('Kethleen','Roush','F.D. Roosevelt HS','2010-10-22',38500);
 
-#3-1
+--3-1
 SELECT * FROM teachers
 ORDER BY school,last_name ASC;
 
-#3-2
+--3-2
 SELECT * FROM teachers
 WHERE first_name LIKE 'S%' AND salary>=40000;
 
-#3-3
+--3-3
 SELECT * FROM teachers
 WHERE hire_date>='2010-01-01' 
 ORDER BY salary DESC;
