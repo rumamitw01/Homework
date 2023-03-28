@@ -1,8 +1,20 @@
 #移除逗號
-n=int(input("give an integer"))
+n=int(input("give an integer:"))
 for i in range(1,n):
     print(i,end=",")
 print(n)
+#左上三角形
+a=int(input())
+for i in range(a):
+    for j in range(i+1):
+        print("*",end="")
+    print()
+#左下三角形
+a=int(input())
+for i in range(a):
+    for j in range(a-i):
+        print("*",end="")
+    print()
 #右上三角形
 a=int(input())
 for i in range(a):
@@ -14,7 +26,7 @@ for i in range(a):
 #右下三角形
 a=int(input())
 for i in range(a):
-    for j in range(a-i,-1,-1):
+    for j in range(a-i-1,0,-1):
         print(" ",end="")
     for k in range(i+1):
         print("*",end="")
