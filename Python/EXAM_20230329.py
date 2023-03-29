@@ -32,7 +32,7 @@ for i in range(len(t_list)):
     money+=temp_list[ord(t_list[i])-65]*0.8
 if money>3000:
     for j in range(len(sorted(t_list))-1,0,-1):
-        money-=temp_list[ord(t_list[i])-65]*0.8
+        money-=temp_list[ord(t_list[j])-65]*0.8
         t_list.pop()
         if money<3000:
             break
