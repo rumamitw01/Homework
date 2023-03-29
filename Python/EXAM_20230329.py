@@ -26,7 +26,7 @@ print(final_list)
 #3
 temp_list=[1000,1250,1500,2000]
 money=0
-temp=input("請輸入要結帳的商品(A:1000,B:1250,C:1500,2000)並以英文逗號隔開:")
+temp=input("請輸入要結帳的商品(A:1000,B:1250,C:1500,D:2000)並以英文逗號隔開:")
 t_list=temp.split(",")
 for i in range(len(t_list)):
     money+=temp_list[ord(t_list[i])-65]*0.8
