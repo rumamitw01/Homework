@@ -35,6 +35,24 @@ for i in range(len(data)):
             print(data[i][j].rjust(7),end=" ")
     print(data[i][len(data)].rjust(7))
 
+#Function_Homework_04_Another_Solution
+data=["Name","S1","S2","S3","S4",
+       "Bill","34210","9000","186500","78900",
+       "May","23600","23900","127800","125000",
+       "Jack","145000","83400","100000","90000"]
+for i in range(len(data)-1):
+    if i==0:
+        print(data[i].rjust(4),end=" ")
+        continue
+    if i%5==0:
+        print(data[i].rjust(4),end=" ")
+    elif i%5==2:
+        print(data[i].rjust(6),end=" ")
+    else:
+        print(data[i].rjust(7),end=" ")
+    if i%5==4:
+        print()
+print(data[len(data)-1].rjust(7))
 #Function_Homework_05
 time="11:30:26"
 print(time)
