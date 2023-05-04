@@ -1,6 +1,7 @@
 #前置作業(匯入資料)
-#第一題
 CREATE DATABASE test;
+
+#第一題
 
 CREATE TABLE acs_2014_2018_stats (
     geoid text CONSTRAINT geoid_key PRIMARY KEY,
